@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GameViewController">
+            <connections>
+                <outlet property="birdView" destination="0ER-6H-bvT" id="wST-vH-Jh2"/>
+                <outlet property="gameOverView" destination="i1a-BS-EgF" id="JEF-h1-QHM"/>
+                <outlet property="pipesTerminatorView" destination="I9Y-cP-k1w" id="kDz-Eu-mYJ"/>
+                <outlet property="pipesView" destination="8Vi-bt-l0P" id="Wv4-iV-F3X"/>
+                <outlet property="referenceView" destination="zFg-Y4-bde" id="RSB-qy-RBZ"/>
+                <outlet property="splashView" destination="JRf-Iz-f8F" id="kH7-zs-jeo"/>
+                <outlet property="tap" destination="4Mm-xr-3Jw" id="db6-0d-A4I"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" id="gmJ-9E-QvI">
+                    <rect key="frame" x="0.0" y="440" width="320" height="128"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" id="iat-Sm-pFV">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="8"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <color key="backgroundColor" red="0.47058823529411764" green="0.78431372549019607" blue="0.47058823529411764" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.86951864919354838" blue="0.40372983870967744" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" id="zFg-Y4-bde" userLabel="Field View">
+                    <rect key="frame" x="-80" y="-440" width="440" height="880"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" id="8Vi-bt-l0P" userLabel="Pipes View">
+                            <rect key="frame" x="0.0" y="0.0" width="440" height="880"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" id="I9Y-cP-k1w" userLabel="Pipes Terminator View">
+                            <rect key="frame" x="0.0" y="0.0" width="40" height="880"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" id="0ER-6H-bvT" userLabel="Bird View">
+                            <rect key="frame" x="102" y="649" width="32" height="32"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="1" green="0.3921568627" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="JRf-Iz-f8F" userLabel="Splash View">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </imageView>
+                <view alpha="0.0" contentMode="scaleToFill" id="i1a-BS-EgF" userLabel="Game Over View">
+                    <rect key="frame" x="60" y="142" width="200" height="150"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Over" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qt8-qq-OoN" userLabel="Title Label">
+                            <rect key="frame" x="0.0" y="36" width="200" height="48"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="27"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to play again" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0Wk-ug-KWi" userLabel="Details Label">
+                            <rect key="frame" x="0.0" y="80" width="200" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.83902469758064513" green="1" blue="0.99981098790322576" alpha="1" colorSpace="calibratedRGB"/>
+            <gestureRecognizers/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="4Mm-xr-3Jw" appends="YES" id="N8h-s3-qje"/>
+            </connections>
+        </view>
+        <tapGestureRecognizer id="4Mm-xr-3Jw">
+            <connections>
+                <action selector="handleTap:" destination="-1" id="26W-pn-5U4"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>

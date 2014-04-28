@@ -19,6 +19,8 @@
 		ADDC8FBF190EDF4500BF7B85 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADDC8FA7190EDF4400BF7B85 /* UIKit.framework */; };
 		ADDC8FC7190EDF4500BF7B85 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ADDC8FC5190EDF4500BF7B85 /* InfoPlist.strings */; };
 		ADDC8FC9190EDF4500BF7B85 /* UIKitDynamicsFlappyBirdTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDC8FC8190EDF4500BF7B85 /* UIKitDynamicsFlappyBirdTests.m */; };
+		ADDC8FD5190EDF5A00BF7B85 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDC8FD3190EDF5A00BF7B85 /* GameViewController.m */; };
+		ADDC8FD6190EDF5A00BF7B85 /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADDC8FD4190EDF5A00BF7B85 /* GameViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,9 @@
 		ADDC8FC4190EDF4500BF7B85 /* UIKitDynamicsFlappyBirdTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UIKitDynamicsFlappyBirdTests-Info.plist"; sourceTree = "<group>"; };
 		ADDC8FC6190EDF4500BF7B85 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		ADDC8FC8190EDF4500BF7B85 /* UIKitDynamicsFlappyBirdTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIKitDynamicsFlappyBirdTests.m; sourceTree = "<group>"; };
+		ADDC8FD2190EDF5A00BF7B85 /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		ADDC8FD3190EDF5A00BF7B85 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		ADDC8FD4190EDF5A00BF7B85 /* GameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +112,7 @@
 		ADDC8FA9190EDF4400BF7B85 /* UIKitDynamicsFlappyBird */ = {
 			isa = PBXGroup;
 			children = (
+				ADDC8FD7190EDF5E00BF7B85 /* Game View Controller */,
 				ADDC8FB2190EDF4400BF7B85 /* AppDelegate.h */,
 				ADDC8FB3190EDF4400BF7B85 /* AppDelegate.m */,
 				ADDC8FB5190EDF4500BF7B85 /* Images.xcassets */,
@@ -142,6 +148,16 @@
 				ADDC8FC5190EDF4500BF7B85 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ADDC8FD7190EDF5E00BF7B85 /* Game View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ADDC8FD2190EDF5A00BF7B85 /* GameViewController.h */,
+				ADDC8FD3190EDF5A00BF7B85 /* GameViewController.m */,
+				ADDC8FD4190EDF5A00BF7B85 /* GameViewController.xib */,
+			);
+			name = "Game View Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +237,7 @@
 			files = (
 				ADDC8FAE190EDF4400BF7B85 /* InfoPlist.strings in Resources */,
 				ADDC8FB6190EDF4500BF7B85 /* Images.xcassets in Resources */,
+				ADDC8FD6190EDF5A00BF7B85 /* GameViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADDC8FB4190EDF4400BF7B85 /* AppDelegate.m in Sources */,
+				ADDC8FD5190EDF5A00BF7B85 /* GameViewController.m in Sources */,
 				ADDC8FB0190EDF4400BF7B85 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
